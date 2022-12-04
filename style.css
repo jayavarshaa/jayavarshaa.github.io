@@ -15,7 +15,7 @@
     --darkgreen: #398c48;
     --lightgreen: #e3ffe8;
     --purple: #ad67df;
-    --lightpurple: #bc6ef5;
+    --lightpurple: #be7eec;
     --blue: #3a6cf4;
     --navblue: #222825;
 
@@ -546,6 +546,13 @@ animation: text-move 10s infinite;
     padding: 2% 0;
 }
 
+.pacman .btn {
+    width: fit-content;
+    margin: 0 auto ;
+    background-color: var(--tertiary);
+    font-size: 1.2em;
+}
+
 
 /*Media Screen */
 @media (max-width: 1040px){
@@ -742,6 +749,7 @@ form {
 .forms{
     padding-top: 10%;
     font-size: 18pt;
+    font-family: 'Playfair Display', serif;
 }
 
 .contactpage .btn {
@@ -757,7 +765,13 @@ form {
     padding-left: 20%;
     padding-right: 20%;
     margin: 10% auto;
+    font-family: 'Playfair Display', serif;
     color: var(--textdark);
+}
+
+.info-group p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
 }
 
 .info {
@@ -842,9 +856,9 @@ form {
 
 .gamemenu h1 {
     font-size: 40pt;
-    color: var(--lightgreen);
+    color: var(--textlight);
     margin-bottom: 10%;
-    background-color: var(--green);
+    background-color: var(--secondary);
     border-radius: 25px;
 }
 
@@ -862,13 +876,65 @@ form {
     text-decoration: none;
     font-size: 20pt;
     color: #f9f6f2;
-    background-color: var(--secondary);
+    background-color: var(--purple);
     padding: 5px 10px;
     border-radius: 10px;
 }
 
 .gamemenu .menu a:hover {
     color: #f9f6f2;
-    background-color: var(--green);
+    background-color: var(--lightpurple);
 }
 
+
+/* - - - - 2048 - GAME - - - - */
+
+.numbergame  {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf8ef;
+    margin: 0 0;
+    overflow: hidden;
+}
+
+.numbergame .text {
+    text-align: center;
+    margin: 2% 5%;
+}
+
+.numbergame h1 {
+    font-size: 40pt;
+    color: #776e65;
+    margin: 0 0 ;
+}
+
+.numbergame p {
+    font-size: 20pt;
+    color: #f9f6f2;
+    background-color: #bbada0;
+    margin: 0% auto;
+    padding: 10px 2px;
+    border-radius: 10px;
+}
+
+.numbergame span {
+    color: white;
+}
+
+.numbergame .buttons a {
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: 500;
+    color: #f9f6f2;
+    background-color: #8f7a66;
+    margin: 5% auto;
+    padding: 10px 10%;
+    border-radius: 10px;
+    display: inline;
+}
+
+.numbergame .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+}
