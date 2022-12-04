@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF—8">
+    <meta http-equiv="X-UA—Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2048</title>
+
+    <script src="2048.js"></script>
+    <script src="config.js"></script>
+    <script src="libraries/p5.js"></script>
+    <!-- <script src="libraries/p5.sound.js"></script> -->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #faf8ef;
+            margin: 0 0;
+            overflow: hidden;
+        }
+
+        .text {
+            text-align: center;
+            margin: 8%;
+        }
+
+        h1 {
+            font-size: 40pt;
+            color: #776e65;
+        }
+
+        p {
+            font-size: 20pt;
+            color: #f9f6f2;
+            background-color: #bbada0;
+            margin: 0% auto;
+            padding: 10px 2px;
+            border-radius: 10px;
+        }
+
+        span {
+            color: white;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            font-size: 20pt;
+            font-weight: 500;
+            color: #f9f6f2;
+            background-color: #8f7a66;
+            margin: 10% auto;
+            padding: 10px 10%;
+            border-radius: 10px;
+            display: inline;
+        }
+
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="text">
+    <h1> 2048 </h1>
+    <h3 id="result"> - </h3>
+    <p>Score = <span id="score"></span></p>
+    <div class="buttons">
+        <a href="2048.html" style="float: left;"> New Game </a>
+        <a href="gamemenu.html" style="float: right;"> back </a>
+    </div>
+    </div>
+    <div class="canvadiv" id="canvadiv"></div>
+    </div>  
+</body>
+
+</html>
